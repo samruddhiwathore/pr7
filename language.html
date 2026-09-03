@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Languages Notes</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #333;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+        }
+
+        .intro {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .languages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            margin-top: 15px;
+        }
+
+        pre {
+            background: #222;
+            color: #00ff88;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Programming Languages Notes</h1>
+        <p>Simple information and notes for beginners</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#languages">Languages</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="home" class="intro">
+            <h2>Welcome!</h2>
+            <p>
+                Learn the basics of different programming languages
+                with simple notes and examples.
+            </p>
+        </section>
+
+        <section id="languages">
+
+            <div class="languages">
+
+                <!-- C -->
+                <div class="card">
+                    <h2>C</h2>
+                    <p>C is a general-purpose programming language commonly
+                       used for system and application development.</p>
+
+                    <h3>Example</h3>
+                    <pre>
+#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hello World!");
+    return 0;
+}</pre>
+                </div>
+
+                <!-- C++ -->
+                <div class="card">
+                    <h2>C++</h2>
+                    <p>C++ is a powerful language that supports
+                       object-oriented programming.</p>
+
+                    <h3>Example</h3>
+                    <pre>
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    cout &lt;&lt; "Hello World!";
+    return 0;
+}</pre>
+                </div>
+
+                <!-- Java -->
+                <div class="card">
+                    <h2>Java</h2>
+                    <p>Java is a popular object-oriented language used
+                       for applications, web development, and Android.</p>
+
+                    <h3>Example</h3>
+                    <pre>
+class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello World!");
+    }
+}</pre>
+                </div>
+
+                <!-- Python -->
+                <div class="card">
+                    <h2>Python</h2>
+                    <p>Python is a beginner-friendly language used for
+                       web development, automation, AI, and data science.</p>
+
+                    <h3>Example</h3>
+                    <pre>
+name = "John"
+print("Hello", name)</pre>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="card">
+                    <h2>JavaScript</h2>
+                    <p>JavaScript is mainly used to make websites
+                       interactive and dynamic.</p>
+
+                    <h3>Example</h3>
+                    <pre>
+let name = "John";
+console.log("Hello " + name);</pre>
+                </div>
+
+                <!-- HTML -->
+                <div class="card">
+                    <h2>HTML</h2>
+                    <p>HTML is used to create the structure of web pages.</p>
+
+                    <h3>Example</h3>
+                    <pre>
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;p&gt;Welcome to my website.&lt;/p&gt;</pre>
+                </div>
+
+                <!-- CSS -->
+                <div class="card">
+                    <h2>CSS</h2>
+                    <p>CSS is used to style and design HTML web pages.</p>
+
+                    <h3>Example</h3>
+                    <pre>
+body {
+    background: lightblue;
+    color: black;
+}</pre>
+                </div>
+
+                <!-- SQL -->
+                <div class="card">
+                    <h2>SQL</h2>
+                    <p>SQL is used to store, manage, and retrieve data
+                       from databases.</p>
+
+                    <h3>Example</h3>
+                    <pre>
+SELECT * FROM students;</pre>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="about" class="intro" style="margin-top: 30px;">
+            <h2>About</h2>
+            <p>
+                This website is designed for students and beginners
+                who want quick programming notes and examples.
+            </p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Programming Languages Notes</p>
+    </footer>
+
+</body>
+</html>
